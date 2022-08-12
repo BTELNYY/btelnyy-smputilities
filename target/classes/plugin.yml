@@ -1,0 +1,9 @@
+name: btelnyy-smputilities
+main: me.btelnyy.smputilities.SmpUtilities
+version: 1.0.0
+api-version: 1.19
+commands:
+  transferxp:
+    description: Transfer XP!
+    usage: /transferxp <player> <levels>
+    permissions: btelnyy.command.transferxp
