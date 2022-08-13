@@ -15,10 +15,11 @@ public class CommandXpTransfer implements CommandExecutor{
     static final Configuration language = SmpUtilities.getInstance().getFileManager().getFile(FileID.LANGUAGE).getConfiguration();
     @Override
     public boolean onCommand(CommandSender sender, Command arg1, String arg2, String[] args) {
-        if(!(sender instanceof Player player)){
+        if(!(sender instanceof Player)){
             sender.sendMessage(Utils.colored(language.getString("not_player")));
             return true;    
         }
+        Player player = (Player) sender;
         if(args.length < 1){
             player.sendMessage(Utils.colored("&cError: &7Invalid Syntax. Usage: /transferxp <player> <amount>"));
             return true;
