@@ -1,5 +1,6 @@
 package me.btelnyy.smputilities.listener;
 
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
@@ -14,7 +15,11 @@ public class EventListener implements Listener {
 
     @EventHandler
     public void onPlayerDeath(PlayerDeathEvent event){
-        Utils.sendActionBarMessage(event.getEntity().getKiller(), language.getString("killed_player").replace("{player}", event.getEntity().getName()));
+        if(event.getEntity().getKiller() == null){
+            return;
+        }
+        Player killer = event.getEntity().getKiller();
+        Utils.sendActionBarMessage(killer, language.getString("killed_player").replace("{player}", event.getEntity().getName()));
     }
 
 }
