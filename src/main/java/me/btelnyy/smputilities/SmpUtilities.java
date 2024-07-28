@@ -5,7 +5,6 @@ import org.bukkit.command.PluginCommand;
 import org.bukkit.command.TabCompleter;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import me.btelnyy.smputilities.commands.CommandXpTransfer;
 import me.btelnyy.smputilities.constants.ConfigData;
 import me.btelnyy.smputilities.listener.EventListener;
 import me.btelnyy.smputilities.service.file_manager.Configuration;
@@ -47,7 +46,7 @@ public class SmpUtilities extends JavaPlugin {
             getServer().getPluginManager().disablePlugin(this);
         }
         // Register commands
-        registerCommandExecutor("transferxp", new CommandXpTransfer());
+        //registerCommandExecutor("transferxp", new CommandXpTransfer());
 
         // SnakeYAML fix
         Thread.currentThread().setContextClassLoader(this.getClassLoader());

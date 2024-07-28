@@ -1,2 +1,13 @@
 plugin_enabled: true
-show_kills_in_actionbar: true
+
+#Shows kills in the actionbar, useful if you disable death messages.
+show_kills_in_actionbar: false
+
+#Prevents players from placing the dragon egg into any containers except their inventory.
+allow_dragon_egg_in_containers: false
+
+#Places the egg where the player holding it disconnected.
+place_dragon_egg_where_player_left: true
+
+#Place the egg when a player drops it?
+place_dragon_egg_when_dropped: true

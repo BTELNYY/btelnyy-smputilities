@@ -1,8 +1,5 @@
 not_player: "&cError: &7You must be a player to run this command"
 player_not_found: "&cError: &7Player not found"
-not_enough_levels: "&cError: &7Not enough levels for transaction"
-transfer_succes: "&eDone. Transferred {levels} levels to {target}"
-transfer_success_target: "&eDone. You got {levels} levels from {sender}"
 invalid_syntax: "&cError: &7Invalid syntax. Usage: {usage}"
 invalid_number: "&cError: &7Number entered is not correct or cannot be parsed"
 killed_player: "&eYou killed {player}"
